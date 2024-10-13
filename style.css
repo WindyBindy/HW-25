@@ -1,47 +1,28 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to top, #000000, #8f8f8f);
-}
-
-.container {
-    position: relative;
-    width: 325px;
-    height: 325px;
-}
-
-.square {
+ ul {
+          list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .item {
+    width: 200px;
+    height: 200px;
+    background: red;
     position: absolute;
-    width: 150px;
-    height: 150px;
-    transition: transform 0.3s ease
-}
-
-.square:hover {
-    transform: scale(0.7);
-}
-
-.square1 {
-    background-color: #ff4322; /* Оранжевый */
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-
-.square2 {
-    background-color: #337bff; /* Синий */
-    top: 90px;
-    left: 90px;
-    z-index: 3;
-}
-
-.square3 {
-    background-color: #2cac2c; /* Зеленый */
-    top: 175px;
-    left: 175px;
-    z-index: 2;
-}
+    top: 100px;
+    right: 1000px;
+    }
+    
+    .item:nth-child(3) {
+        background: blue;
+        position: absolute;
+    top: 200px;
+    right: 900px;
+    }
+    
+    .item:nth-child(2) {
+    background: green;
+    position: absolute;
+    top: 300px;
+    right: 800px;
+    }
